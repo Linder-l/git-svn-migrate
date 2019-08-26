@@ -193,7 +193,7 @@ do
   # Init the final bare repository.
   mkdir $destination/$name.git;
   cd $destination/$name.git;
-  git init --bare $gitinit_params;
+  git init $gitinit_params;
   git symbolic-ref HEAD refs/heads/trunk;
 
   # Clone the original Subversion repository to a temp repository.
